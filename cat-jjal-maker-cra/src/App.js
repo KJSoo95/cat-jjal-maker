@@ -69,12 +69,15 @@ const App = () => {
   const counterTitle = counter === null ? "" : counter + "번째 ";
 
   return ( 
+    <body>
     <div >
     <Title > {counterTitle}고양이 가라사대 </Title>
     <Form updateMainCat = {updateMainCat}/>
     <MainCard img = {mainCat}onHeartClick = {handleHeartClick}alreadyFavorite = {alreadyFavorite}/>
     <Favorites favorites = {favorites}/>
     </div>
+    </body>
+    
   );
 };
 
